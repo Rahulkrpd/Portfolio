@@ -10,6 +10,16 @@
     }
 }
 
+
+.logo {
+    
+    filter: invert(100%);
+    /* Inverts colors (if you want the "invert" effect) */
+   
+    /* Centers the logo */
+}
+
+
 @layer utilities {
     .animate-spin-slow {
         animation: spin 8s linear infinite;
