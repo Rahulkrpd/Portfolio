@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {  Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,18 @@ const Header = () => {
             >
                 <div className="flex items-center justify-between">
                     <div className="w-10 h-10 ">
-                        <img src="./public/apple-touch-icon.png" alt="Rahul" className='fit-conter' />
+                        <img
+                            src="./apple-touch-icon.png"
+                            alt="Rahul"
+                            className='fit-conter'
+                            onError={(e) => {
+                                const target = e.target as HTMLImageElement;
+                                target.style.display = 'none';
+                                const nextSibling = target.nextElementSibling;
+                                if (nextSibling && nextSibling instanceof HTMLElement) nextSibling.style.display = 'block';
+                            }}
+                        />
+                        <span style={{ display: 'none' }} className="text-gray-300  text-lg">Rahul</span>
                     </div>
 
                     {/* Desktop Navigation */}
