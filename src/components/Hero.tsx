@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="max-w-4xl mx-auto">
                     {/* Profile Image */}
-                    <div className="mb-8 relative">
+                    {/* <div className="mb-8 relative">
                         <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-1 animate-spin-slow">
                             <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center">
                                 <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-400 to-teal-400 flex items-center justify-center text-2xl font-bold text-slate-950">
@@ -22,7 +22,7 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Name and Title */}
                     <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent animate-fade-in">
